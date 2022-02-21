@@ -431,7 +431,7 @@ func Test_Engine_loadWorld(t *testing.T) {
 			numAliens: 0,
 		}
 
-		err := s.loadInputToWorld(ctx)
+		err := s.loadWorld(ctx)
 		require.NoError(t, err)
 	})
 
@@ -501,7 +501,7 @@ City6
 			numAliens: 0,
 		}
 
-		err := s.loadInputToWorld(ctx)
+		err := s.loadWorld(ctx)
 		require.NoError(t, err)
 	})
 
@@ -532,7 +532,7 @@ City2 east=City1 south=City4
 			numAliens: 0,
 		}
 
-		err := s.loadInputToWorld(ctx)
+		err := s.loadWorld(ctx)
 		require.ErrorIs(t, err, types.ERR_PARSE_CITY_DEFINITION)
 	})
 
@@ -560,7 +560,7 @@ City2 east=City1 south=City4
 			numAliens: 0,
 		}
 
-		err := s.loadInputToWorld(ctx)
+		err := s.loadWorld(ctx)
 		require.ErrorIs(t, err, types.ERR_PARSE_CITY_DEFINITION)
 	})
 
@@ -593,7 +593,7 @@ City2 east=City1 south=City4
 			numAliens: 0,
 		}
 
-		err := s.loadInputToWorld(ctx)
+		err := s.loadWorld(ctx)
 		require.ErrorIs(t, err, error1)
 	})
 }
