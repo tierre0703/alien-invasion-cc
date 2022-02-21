@@ -56,7 +56,7 @@ may​ ​lead​ ​to​ ​aliens​ ​getting​ ​"trapped".
 
 
 ## Installation
-**Step 1: Install Golang**
+**Step 1: Install Golang** (Go version 1.17+)
 
 **Step 2: Download and Build Source code**
 ```sh
